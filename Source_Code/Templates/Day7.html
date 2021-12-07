@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',filename='css/style.css')}}">
+</head>   
+<body>
+    <div class="bg-nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom text-light">
+        <h5 class='my-0 mr-md-auto font-weight-normal'>Productivity tracker</h5>
+        <nav class='my-2 my-md-0 mr-md-3'>
+            <a class='p-2 text-light' href=/>Home</a>
+            <a class='p-2 text-light' href=/Day1/>Day 1</a>
+            <a class='p-2 text-light' href=/Day2/>Day 2</a>
+            <a class='p-2 text-light' href=/Day3/>Day 3</a>
+            <a class='p-2 text-light' href=/Day4/>Day 4</a>
+            <a class='p-2 text-light' href=/Day5/>Day 5</a>
+            <a class='p-2 text-light' href=/Day6/>Day 6</a>
+            <a class='p-2 text-light' href=/Day7/>Day 7</a>
+        </nav>
+    </div>
+    <h1 id='y'>Your progress for day 7</h1>
+    <form action="{{ url_for("input7")}}" id='x' method="post">
+        <label for="Work">1.Productivity/Work hours:</label><br>
+        <input type="number" min='1' max='24' id="Work" name="Work"><br>
+        <label for="Exercise">2.Exercise:</label><br>
+        <input type="number" min='1' max='24' id="Exercise" name="Exercise"><br>
+        <label for="Screentime">3.Screentime(exclusive of hobbies and work):</label><br>
+        <input type="number" min='1' max='24' id="Screentime" name="Screentime"><br>
+        <label for="Hobbies">4.Hobbies:</label><br>
+        <input type="number" min='1' max='24' id="Hobbies" name="Hobbies"><br>
+        <label for="Social">5.Socialising/Going out:</label><br>
+        <input type="number" min='1' max='24' id="Social" name="Social"><br>
+        <label for="Sleep">6.Sleep:</label><br>
+        <input type="number" min='1' max='24' id="Sleep" name="Sleep"><br>
+        <input type="submit" value="Submit" onclick="this.disabled=true;this.form.submit();">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

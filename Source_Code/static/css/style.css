@@ -1,0 +1,50 @@
+.bg-nav{
+background: #f857a6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.mt-50{
+    margin-top:100px;
+    margin-right:100px;
+}
+
+#y
+{
+  font-family:'Times New Roman';
+  margin-left:50px;
+}
+
+#x
+{
+  font-family:'Times New Roman';
+  margin-left:50px;
+  font-size:20px;
+}
+
+label{
+  padding-top:20px;
+}
+
+input{
+  margin-bottom:10px;
+}
+input[type=number] {
+  border: none;
+  border-bottom: 2px solid pink;
+}
+
+input[type=submit]
+{
+  margin-top:20px;
+  background-color: pink; 
+}
+
+button
+{
+  margin-top:20px;
+  background-color: pink;
+}
+
+
